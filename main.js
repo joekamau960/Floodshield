@@ -1,0 +1,1 @@
+const map = L.map('hero-map').setView([-1.286389,36.817223],13);L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png').addTo(map);

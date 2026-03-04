@@ -1,0 +1,1 @@
+import mongoose from 'mongoose'; const AssetSchema = new mongoose.Schema({ assetId:{type:String,unique:true}, name:String, lat:Number, lon:Number, status:String, history:[{timestamp:Date,stress:Number,vibration:Number}] },{timestamps:true}); export default mongoose.model('Asset',AssetSchema);

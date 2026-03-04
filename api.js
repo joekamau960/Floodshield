@@ -1,0 +1,1 @@
+import express from 'express'; import { predict, forecast, assets, alerts } from '../controllers/apiController.js'; const r=express.Router(); r.get('/predict', predict); r.get('/forecast', forecast); r.get('/assets', assets); r.get('/alerts', alerts); export default r;

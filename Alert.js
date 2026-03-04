@@ -1,0 +1,1 @@
+import mongoose from 'mongoose'; const AlertSchema = new mongoose.Schema({ zone:String, riskLevel:Number, message:String, read:{type:Boolean,default:false} },{timestamps:true}); export default mongoose.model('Alert',AlertSchema);
